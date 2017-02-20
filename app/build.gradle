@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "qianniao.com.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        ndk {
+            //选择要添加的对应cpu类型的.so库
+            abiFilters 'armeabi-v7a','arm64-v8a','x86'
+            //还可以添加 'armeabi', 'x86'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 移除lint检查的error
+    lintOptions{
+        // 如果为true, 则只报告错误
+        ignoreWarnings true
+    }
+
+    sourceSets{
+        main(){
+            jniLibs.srcDirs=['libs']
+        }
+    }
+
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+
+    compile project(':devpkg-android')
+    compile project(':libzxing')
+    compile project(':kefu-easeui')
+    compile project(':bottomnavigation')
+    compile project(':pulltorefredhlibrary')
+
+    compile 'com.jude:easyrecyclerview:4.0.6'
+    compile 'com.daimajia.numberprogressbar:library:1.2@aar'
+    // network retrofit - squareup
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+
+    //rxJava
+    compile 'io.reactivex:rxjava:1.2.2'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.wefika:flowlayout:0.4.0'
+
+
+    compile 'com.android.support:multidex:1.0.0'
+}

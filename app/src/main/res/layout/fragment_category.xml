@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/siwprefreshlayout_fragment_category"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#3f00"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true">-->
+
+        <!--<ListView-->
+            <!--android:id="@+id/listview_categoryFragment"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</ListView>-->
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <qianniao.com.myapplication.view.RefreshListView
+        android:id="@+id/refreshlistview_fragment_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </qianniao.com.myapplication.view.RefreshListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1000"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_editText_categoryFragment"
+            android:layout_width="300dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:id="@+id/search_imageView_categoryFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/search" />
+    </LinearLayout>
+
+</RelativeLayout>

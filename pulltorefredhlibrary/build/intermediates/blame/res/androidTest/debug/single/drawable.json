@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\arrow_down.png",
+        "source": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\arrow_down.png"
+    },
+    {
+        "merged": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\arrow_up.png",
+        "source": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\arrow_up.png"
+    },
+    {
+        "merged": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\arrow_right.png",
+        "source": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\arrow_right.png"
+    },
+    {
+        "merged": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\arrow_left.png",
+        "source": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\arrow_left.png"
+    },
+    {
+        "merged": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\loading_anim.xml",
+        "source": "C:\\MyApplication\\pulltorefredhlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\loading_anim.xml"
+    }
+]
